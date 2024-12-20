@@ -17,8 +17,8 @@ spec:
       serviceAccount: admission-webhook-example-sa
       containers:
         - name: admission-webhook-example
-          image: cnych/admission-webhook-example:v1
-          imagePullPolicy: Always
+          image: weiht/admission-webhook-example:v1
+          imagePullPolicy: Never
           args:
             - -tlsCertFile=/etc/webhook/certs/cert.pem
             - -tlsKeyFile=/etc/webhook/certs/key.pem
